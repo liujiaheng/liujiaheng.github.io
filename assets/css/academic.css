@@ -26,10 +26,9 @@ p { margin: 0 0 15px; }
 ul { padding-left: 21px; margin: 0 0 20px; }
 li { padding-left: 3px; margin-bottom: 7px; }
 strong { font-weight: 650; }
-.profile { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 170px; gap: 50px; align-items: center; margin: 4px 0 31px; }
+.profile { position: relative; isolation: isolate; margin: 4px 0 31px; }
 .profile::before { content: ''; position: absolute; inset: -23px -20px; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.9) 42%, rgba(255,255,255,.22) 100%), url('../../images/nju-campus.jpg') center 50% / cover no-repeat; border-radius: 8px; }
-.portrait { grid-column: 2; grid-row: 1; width: 161px; height: 239px; display: block; object-fit: contain; justify-self: end; align-self: end; transform: translateY(12px); -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 87%, transparent 100%); mask-image: linear-gradient(to bottom, #000 0%, #000 87%, transparent 100%); }
-.profile-details { grid-column: 1; grid-row: 1; }
+.profile-details { max-width: 660px; }
 .profile-name { color: var(--navy); font-size: 38px; letter-spacing: -.045em; line-height: 1.25; font-weight: 700; margin: 0 0 12px; }
 .profile-name span { font-size: 25px; margin-left: 10px; letter-spacing: 0; font-weight: 500; }
 .profile-details p { margin-bottom: 7px; }
@@ -100,7 +99,6 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
   .site-header { gap: 24px; }
   .menu { gap: 17px; }
   .lab-brand small { font-size: 8px; }
-  .profile { gap: 30px; }
 }
 @media (max-width: 720px) {
   body { font-size: 15px; }
@@ -113,12 +111,10 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
   .menu a { padding: 8px 0 12px; font-size: 13px; }
   main { padding-top: 29px; }
   .page-title { font-size: 30px; }
-  .profile { grid-template-columns: minmax(0,1fr) 98px; gap: 17px; align-items: start; }
   .profile::before { inset: -16px -12px; background-image: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.88) 55%, rgba(255,255,255,.4)), url('../../images/nju-campus.jpg'); }
-  .portrait { width: 98px; height: auto; margin-top: 5px; align-self: start; transform: none; }
   .profile-name { font-size: 29px; margin-bottom: 13px; letter-spacing: -.035em; }
   .profile-name span { display: block; margin: 7px 0 0; font-size: 20px; }
-  .profile-details { font-size: 13px; line-height: 1.65; }
+  .profile-details { font-size: 14px; line-height: 1.65; }
   .profile-details p { margin-bottom: 10px; }
   .contact-links { gap: 5px 14px; font-size: 13px; margin-top: 14px; }
   .recruitment { padding: 13px 15px; font-size: 14px; }
@@ -141,6 +137,6 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
   .award-list li { padding: 20px 0; }
   footer { margin-top: 39px; font-size: 11px; }
 }
-@media (max-width: 360px) { .site { padding: 0 16px; } .profile { grid-template-columns: minmax(0,1fr) 80px; gap: 12px; } .portrait { width: 80px; } .profile-name { font-size: 25px; } .menu a { font-size: 12px; } }
+@media (max-width: 360px) { .site { padding: 0 16px; } .profile-name { font-size: 25px; } .menu a { font-size: 12px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 @media print { body::before, body::after, .profile::before { display: none; } .site { background: #fff; box-shadow: none; } .site-header, .pub-controls, .filter-status, .year-nav, .skip-link { display: none; } .site { max-width: none; margin: 0; padding: 0; } main { padding: 0; } body { font-size: 11pt; } .publication, .member { break-inside: avoid; } a { color: inherit; } }

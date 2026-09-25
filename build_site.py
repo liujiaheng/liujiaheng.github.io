@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 UPDATED = 'September 2026'
 # Version every internal page and asset together, so cached old HTML cannot
 # reappear when navigating from an updated page.
-_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'images/favicon.png', ROOT/'images/jiaheng-liu-cutout.png', *sorted((ROOT/'data').glob('*.json'))]
+_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
 SITE_VERSION = hashlib.sha256(b''.join(p.read_bytes() for p in _VERSION_INPUTS)).hexdigest()[:12]
 SCHOLAR = 'https://scholar.google.com/citations?user=yFI_RjUAAAAJ&hl=en'
 LAB = 'https://www.nju-link.com/'
@@ -63,7 +63,6 @@ def homepage():
         return '<ul class="news">' + ''.join(f'<li><time datetime="{e(r["date"])}">{e(r["label"])}</time><span>{e(r["text"])}</span></li>' for r in rows) + '</ul>'
     page('index.html', "Jiaheng Liu’s Homepage", f'''
     <section class="profile" aria-label="Profile">
-      <img class="portrait" src="images/jiaheng-liu-cutout.png?v={SITE_VERSION}" width="161" height="239" alt="Portrait of Jiaheng Liu">
       <div class="profile-details">
         <h1 class="profile-name">Jiaheng Liu <span lang="zh-CN">刘佳恒</span></h1>
         <p class="position">Assistant Professor · Ph.D. Supervisor</p>

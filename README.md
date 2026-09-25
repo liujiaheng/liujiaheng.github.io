@@ -12,7 +12,7 @@ python3 build_site.py
 
 The builder generates six pages. Biography, services, and honors are maintained in `build_site.py`; presentation is in `assets/css/academic.css`.
 
-Internal page links, styles, and scripts share a content version to prevent stale pages during navigation. The campus photograph appears only in the homepage profile header, without blur and with a light overlay behind the text. Original image assets are preserved; display variants use lightweight web encodings. The portrait uses a transparent cutout derived from the original photograph, keeping its facial and clothing pixels; a short CSS fade blends the lower edge into the campus header.
+Internal page links, styles, and scripts share a content version to prevent stale pages during navigation. The campus photograph appears only in the homepage profile header, without blur and with a light overlay behind the text. Original image assets are preserved; display variants use lightweight web encodings. The profile header displays text and the campus background without a personal portrait.
 
 Publication author marks: `#` indicates a confirmed corresponding author and `*` equal contribution. Long author lists can be expanded; verified corresponding authors remain visible in the collapsed list. Accepted papers and preprints are distinguished and can be filtered. EMNLP main-conference papers use the venue label “EMNLP 2026”; Findings retain their separate venue label.
 
