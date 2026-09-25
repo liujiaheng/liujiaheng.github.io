@@ -75,7 +75,7 @@ def homepage():
     </section>
     <aside class="recruitment"><p><strong>Join us!</strong> I am looking for motivated Ph.D. and master’s students, as well as research interns, to work on foundation models, agents, and their evaluation. Please <a href="mailto:liujiaheng@nju.edu.cn">email me</a> if you are interested.</p></aside>
     <section aria-labelledby="biography"><h2 id="biography">Biography</h2>
-      <p>I am an Assistant Professor at <a href="https://www.nju.edu.cn/en/">Nanjing University</a>, where I lead the <a href="{LAB}">Large-scale Intelligence and Knowledge (LINK) Lab</a>. I am also a co-founder of <a href="https://github.com/multimodal-art-projection">Multimodal Art Projection (M-A-P)</a>, an open-source research community working on text, audio, and visual intelligence.</p>
+      <p>I am an Assistant Professor at <a href="https://www.nju.edu.cn/en/">Nanjing University</a>, where I am a member of the <a href="{LAB}">Large-scale Intelligence and Knowledge (LINK) Lab</a>. I am also a co-founder of <a href="https://github.com/multimodal-art-projection">Multimodal Art Projection (M-A-P)</a>, an open-source research community working on text, audio, and visual intelligence.</p>
       <p>My research spans <strong>foundation models, code intelligence, reinforcement learning, agents, and evaluation</strong>. I aim to build capable and reliable models that can reason, use tools, and complete complex tasks. My work connects open model development with post-training, realistic benchmarks, and applications in education and scientific research.</p>
       <p>Previously, I was a Research Scientist at Alibaba (2023–2025), through the <strong>Alibaba Star</strong> program. I received my Ph.D. (2023) and B.Eng. (2019) in Software Engineering from Beihang University, advised during my Ph.D. by <a href="https://scse.buaa.edu.cn/info/1078/2655.htm">Prof. Ke Xu</a> and <a href="https://scholar.google.com/citations?user=7Hdu5k4AAAAJ">Prof. Dong Xu</a>. I also interned at SenseTime, Baidu, and Shanghai AI Laboratory.</p>
       <p>I received an <a href="award.html">ACL 2024 Outstanding Paper Award</a>. I contribute to open-source models and training frameworks, including MAP-Neo, OpenCoder, YuE, ROLL, and Flow-GRPO.</p>
@@ -168,7 +168,7 @@ def publications():
 
 def members():
     data=json.loads((ROOT/'data/members.json').read_text())
-    content=f'<div class="members-intro"><p>I lead the <a href="{LAB}">Large-scale Intelligence and Knowledge (LINK) Lab</a> at Nanjing University. Our students work on foundation models, reinforcement learning, agents, code intelligence, and evaluation.</p><p>Interested in joining us? Please contact <a href="mailto:liujiaheng@nju.edu.cn">liujiaheng@nju.edu.cn</a>.</p></div>'
+    content=f'<div class="members-intro"><p>I am a member of the <a href="{LAB}">Large-scale Intelligence and Knowledge (LINK) Lab</a> at Nanjing University. Our students work on foundation models, reinforcement learning, agents, code intelligence, and evaluation.</p><p>Interested in joining us? Please contact <a href="mailto:liujiaheng@nju.edu.cn">liujiaheng@nju.edu.cn</a>.</p></div>'
     def member_list(rows):
         result='<ul class="members">'
         for m in rows:
