@@ -1,0 +1,237 @@
+[
+  {
+    "date": "2026-09",
+    "label": "09/2026",
+    "text": "Three papers were accepted to NeurIPS 2026."
+  },
+  {
+    "date": "2026-08",
+    "label": "08/2026",
+    "text": "Twelve papers (7 Main and 5 Findings) were accepted to EMNLP 2026."
+  },
+  {
+    "date": "2026-05",
+    "label": "05/2026",
+    "text": "Nine papers were accepted to ICML 2026."
+  },
+  {
+    "date": "2026-04",
+    "label": "04/2026",
+    "text": "Twelve papers (5 Main and 7 Findings) were accepted to ACL 2026."
+  },
+  {
+    "date": "2026-01",
+    "label": "01/2026",
+    "text": "Thirteen papers were accepted to ICLR 2026."
+  },
+  {
+    "date": "2025-11",
+    "label": "11/2025",
+    "text": "Two papers were accepted to AAAI 2026."
+  },
+  {
+    "date": "2025-09",
+    "label": "09/2025",
+    "text": "Six papers were accepted to NeurIPS 2025."
+  },
+  {
+    "date": "2025-08",
+    "label": "08/2025",
+    "text": "Three papers were accepted to EMNLP 2025."
+  },
+  {
+    "date": "2025-07",
+    "label": "07/2025",
+    "text": "One paper was accepted to ACM MM 2025."
+  },
+  {
+    "date": "2025-05",
+    "label": "05/2025",
+    "text": "Thirteen papers (10 Main and 3 Findings) were accepted to ACL 2025."
+  },
+  {
+    "date": "2025-01",
+    "label": "01/2025",
+    "text": "Four papers were accepted to ICLR 2025."
+  },
+  {
+    "date": "2025-01",
+    "label": "01/2025",
+    "text": "Two papers were accepted to NAACL 2025."
+  },
+  {
+    "date": "2024-12",
+    "label": "12/2024",
+    "text": "Co-organizing the Open Science for Foundation Models Workshop at ICLR 2025."
+  },
+  {
+    "date": "2024-12",
+    "label": "12/2024",
+    "text": "Two papers were accepted to AAAI 2025."
+  },
+  {
+    "date": "2024-09",
+    "label": "09/2024",
+    "text": "Four papers were accepted to NeurIPS 2024."
+  },
+  {
+    "date": "2024-09",
+    "label": "09/2024",
+    "text": "One paper was accepted to EMNLP 2024."
+  },
+  {
+    "date": "2024-07",
+    "label": "07/2024",
+    "text": "Three papers were accepted to ACM MM 2024."
+  },
+  {
+    "date": "2024-07",
+    "label": "07/2024",
+    "text": "One paper was accepted to COLM 2024."
+  },
+  {
+    "date": "2024-07",
+    "label": "07/2024",
+    "text": "One paper was accepted to ECCV 2024."
+  },
+  {
+    "date": "2024-05",
+    "label": "05/2024",
+    "text": "Seven papers were accepted to ACL 2024."
+  },
+  {
+    "date": "2024-05",
+    "label": "05/2024",
+    "text": "One paper was accepted to ICML 2024."
+  },
+  {
+    "date": "2024-02",
+    "label": "02/2024",
+    "text": "One paper was accepted to CVPR 2024."
+  },
+  {
+    "date": "2024-02",
+    "label": "02/2024",
+    "text": "One paper was accepted to COLING 2024."
+  },
+  {
+    "date": "2023-11",
+    "label": "11/2023",
+    "text": "One paper was accepted to AAAI 2024.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023-09",
+    "label": "09/2023",
+    "text": "One paper was accepted to Findings of EMNLP 2023.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023-07",
+    "label": "07/2023",
+    "text": "One paper was accepted to ICCV 2023.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023-07",
+    "label": "07/2023",
+    "text": "One paper was accepted to CIKM 2023.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023-05",
+    "label": "05/2023",
+    "text": "One paper was accepted to Findings of ACL 2023.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023-02",
+    "label": "02/2023",
+    "text": "One paper was accepted to CVPR 2023.",
+    "source": "Original homepage announcement"
+  },
+  {
+    "date": "2023",
+    "label": "2023",
+    "text": "One paper was accepted to DASFAA 2023.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2023",
+    "label": "2023",
+    "text": "One paper was published in Multimedia Tools and Applications in 2023.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "Two papers were accepted to ECCV 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper was accepted to EMNLP 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper was accepted to Findings of NAACL 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper was accepted to AAAI 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper was accepted to MICCAI 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper was accepted to BIBM 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2022",
+    "label": "2022",
+    "text": "One paper each was published in IEEE TIP, IEEE TMM, and IEEE TCSVT in 2022.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2021",
+    "label": "2021",
+    "text": "One paper was accepted to ICCV 2021.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2021",
+    "label": "2021",
+    "text": "Two papers were published in IEEE TCSVT in 2021.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2020",
+    "label": "2020",
+    "text": "One paper was accepted to AAAI 2020.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2020",
+    "label": "2020",
+    "text": "One paper was published in IEEE TIP in 2020.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  },
+  {
+    "date": "2019",
+    "label": "2019",
+    "text": "Two papers were accepted to ICCV 2019.",
+    "source": "Verified publication list; year shown because acceptance month is not available"
+  }
+]

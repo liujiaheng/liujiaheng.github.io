@@ -1,0 +1,147 @@
+:root { --navy: #660066; --accent: #660066; --ink: #512452; --muted: #7a567d; --line: #e7dce9; --soft: #f5eff7; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 24px; }
+body { position: relative; isolation: isolate; margin: 0; background: #fdfafd; color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; -webkit-font-smoothing: antialiased; }
+/* Decorative original photo: blur and tint are presentation effects only. */
+body::before { content: ''; position: fixed; inset: -12px; z-index: -2; pointer-events: none; background: url('../../images/nju-campus.png') center 48% / cover no-repeat; filter: blur(5px) saturate(.65); opacity: .25; }
+body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgba(253,250,253,.45), rgba(253,250,253,.6) 52%, rgba(253,250,253,.88)); }
+a { color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
+a:hover { text-decoration: underline; }
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.site { max-width: 1120px; min-height: 100vh; margin: 0 auto; padding: 0 36px; background: rgba(255,255,255,.91); box-shadow: 0 0 100px rgba(255,255,255,.45); }
+.site-header { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); }
+.lab-brand { display: flex; gap: 13px; align-items: center; flex-shrink: 0; color: var(--navy); }
+.lab-brand:hover { text-decoration: none; }
+.lab-brand img { display: block; width: 37px; height: 51px; object-fit: contain; }
+.lab-brand span { font-weight: 650; font-size: 18px; line-height: 1.4; }
+.lab-brand small { display: block; margin-top: 4px; font-size: 9px; font-weight: 600; letter-spacing: .11em; color: var(--muted); }
+.menu { display: flex; flex-wrap: wrap; gap: 24px; }
+.menu a { color: var(--muted); padding: 8px 0; font-size: 14px; border-bottom: 2px solid transparent; }
+.menu a:hover { text-decoration: none; color: var(--navy); }
+.menu a[aria-current="page"] { color: var(--navy); border-bottom-color: var(--accent); font-weight: 650; }
+main { min-width: 0; padding: 42px 0 0; }
+.page-title { font-size: 34px; letter-spacing: -.035em; line-height: 1.25; color: var(--navy); margin: 0 0 23px; font-weight: 700; }
+h2 { display: flex; align-items: baseline; gap: 15px; flex-wrap: wrap; font-size: 22px; letter-spacing: -.02em; line-height: 1.4; color: var(--navy); margin: 38px 0 17px; }
+h2::after { content: ''; flex: 1; min-width: 24px; height: 1px; background: var(--line); align-self: center; }
+h3 { color: var(--navy); font-size: 16px; font-weight: 600; margin: 24px 0 5px; }
+p { margin: 0 0 15px; }
+ul { padding-left: 21px; margin: 0 0 20px; }
+li { padding-left: 3px; margin-bottom: 7px; }
+strong { font-weight: 650; }
+.profile { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 170px; gap: 50px; align-items: center; margin: 4px 0 31px; }
+.profile::before { content: ''; position: absolute; inset: -23px -20px; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.86) 42%, rgba(255,255,255,.55) 100%), url('../../images/nju-campus.png') center 50% / cover no-repeat; filter: blur(2px); border-radius: 8px; }
+.portrait { grid-column: 2; grid-row: 1; width: 161px; height: 239px; display: block; object-fit: contain; justify-self: end; }
+.profile-details { grid-column: 1; grid-row: 1; }
+.profile-name { color: var(--navy); font-size: 38px; letter-spacing: -.045em; line-height: 1.25; font-weight: 700; margin: 0 0 12px; }
+.profile-name span { font-size: 25px; margin-left: 10px; letter-spacing: 0; font-weight: 500; }
+.profile-details p { margin-bottom: 7px; }
+.position { font-weight: 600; color: var(--navy); }
+.contact-links { display: flex; flex-wrap: wrap; gap: 5px 20px; margin-top: 15px; font-size: 14px; font-weight: 600; }
+.recruitment { background: var(--soft); border-left: 3px solid var(--accent); padding: 14px 19px; margin: 26px 0 32px; font-size: 15px; }
+.recruitment strong { color: var(--accent); }
+.recruitment p { margin: 0; }
+.news { list-style: none; padding: 0; }
+.news li { display: grid; grid-template-columns: 87px minmax(0, 1fr); column-gap: 18px; padding: 0; margin-bottom: 10px; }
+.news time { color: var(--muted); white-space: nowrap; font-size: 14px; font-variant-numeric: tabular-nums; padding-top: 2px; }
+.older-news summary { color: var(--accent); cursor: pointer; margin: 12px 0 17px; width: fit-content; font-size: 14px; }
+.timeline { display: grid; grid-template-columns: 116px minmax(0, 1fr); gap: 17px 20px; margin: 0; }
+.timeline dt { color: var(--muted); font-size: 14px; padding-top: 2px; }
+.timeline dd { margin: 0; }
+.timeline .detail { display: block; color: var(--muted); font-size: 14px; }
+.subtle { color: var(--muted); font-size: 13px; line-height: 1.65; }
+.publication-intro { max-width: 950px; margin-bottom: 23px; }
+.pub-controls { display: grid; grid-template-columns: minmax(180px, 1fr) 170px 120px; gap: 14px; margin: 24px 0 10px; }
+.pub-controls label { display: flex; flex-direction: column; gap: 6px; color: var(--muted); font-size: 12px; }
+input, select, button { font: inherit; }
+input::placeholder { color: var(--muted); opacity: 1; }
+::selection { background: #ead4ee; color: var(--navy); }
+.pub-controls input, .pub-controls select { width: 100%; color: var(--ink); border: 1px solid #cfbbd4; border-radius: 5px; padding: 9px 11px; background: #fff; font-size: 14px; height: 43px; }
+.filter-status { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; min-height: 25px; font-size: 12px; color: var(--muted); }
+.reset-filter { color: var(--accent); border: 0; border-bottom: 1px solid var(--accent); padding: 0; background: none; cursor: pointer; font: inherit; }
+.year-nav { display: flex; flex-wrap: wrap; gap: 8px 22px; font-size: 14px; padding: 14px 0 4px; font-variant-numeric: tabular-nums; }
+.pub-year h2 { margin: 29px 0 4px; font-size: 25px; }
+.pub-list { list-style: none; padding: 0; }
+.publication { margin: 0; padding: 20px 0; border-bottom: 1px solid var(--line); }
+.publication:last-child { border-bottom: 0; }
+.paper-title { display: block; color: var(--navy); font-weight: 650; line-height: 1.5; margin-bottom: 6px; font-size: 16px; }
+a.paper-title:hover { color: var(--accent); }
+.paper-authors { color: var(--muted); font-size: 14px; line-height: 1.6; margin: 0 0 5px; }
+.paper-authors strong { color: var(--ink); }
+sup { line-height: 0; font-size: .72em; }
+.corresponding-author { color: var(--accent); font-weight: 700; }
+.paper-authors summary { cursor: pointer; list-style: none; }
+.paper-authors summary::-webkit-details-marker { display: none; }
+.paper-authors summary::after { content: ' [all authors]'; color: var(--accent); font-size: 12px; white-space: nowrap; }
+.paper-authors[open] summary::after { content: ' [collapse]'; }
+.paper-authors .full-authors { margin: 8px 0; padding: 3px 0 3px 13px; border-left: 2px solid var(--line); }
+.paper-meta { font-size: 13px; display: flex; flex-wrap: wrap; gap: 3px 14px; }
+.venue { color: var(--accent); font-weight: 600; }
+.preprint .venue { color: var(--muted); font-weight: 400; }
+.paper-award { color: var(--accent); font-weight: 600; }
+.no-results { padding: 32px 0; color: var(--muted); }
+.members-intro { max-width: 850px; }
+.members { list-style: none; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0 35px; }
+.member { border-bottom: 1px solid var(--line); padding: 17px 0 22px; margin: 0; }
+.member-name { font-size: 19px; color: var(--navy); font-weight: 650; display: block; }
+.member-cn { display: block; font-size: 15px; margin-top: 1px; }
+.member-year { display: block; font-size: 13px; color: var(--muted); margin-top: 8px; font-variant-numeric: tabular-nums; }
+.member-link { font-size: 13px; display: inline-block; margin-top: 5px; }
+.section-note { font-size: 11px; line-height: 1.7; font-weight: 500; letter-spacing: 0; color: var(--accent); background: var(--soft); padding: 3px 9px; border-radius: 4px; }
+.upcoming .member-year { color: var(--accent); }
+.award-list { list-style: none; padding: 0; margin-top: 10px; }
+.award-list li { margin: 0; padding: 22px 0; border-bottom: 1px solid var(--line); }
+.award-list strong { color: var(--navy); }
+.award-detail { display: block; color: var(--muted); margin-top: 5px; font-size: 14px; }
+.service-list li { margin-bottom: 14px; }
+footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28px; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px 24px; font-size: 12px; color: var(--muted); }
+.skip-link { position: absolute; left: 16px; top: -100px; background: #fff; border: 1px solid var(--accent); padding: 8px 14px; z-index: 10; }
+.skip-link:focus { top: 12px; }
+[hidden] { display: none !important; }
+@media (max-width: 900px) {
+  .site { padding: 0 28px; }
+  .site-header { gap: 24px; }
+  .menu { gap: 17px; }
+  .lab-brand small { font-size: 8px; }
+  .profile { gap: 30px; }
+}
+@media (max-width: 720px) {
+  body { font-size: 15px; }
+  .site { padding: 0 20px; }
+  .site-header { flex-direction: column; align-items: flex-start; gap: 14px; padding: 19px 0 0; }
+  .lab-brand img { width: 31px; height: 43px; }
+  .lab-brand span { font-size: 17px; }
+  .lab-brand small { font-size: 8px; }
+  .menu { width: 100%; gap: 0; justify-content: space-between; }
+  .menu a { padding: 8px 0 12px; font-size: 13px; }
+  main { padding-top: 29px; }
+  .page-title { font-size: 30px; }
+  .profile { grid-template-columns: minmax(0,1fr) 98px; gap: 17px; align-items: start; }
+  .portrait { width: 98px; height: auto; margin-top: 5px; }
+  .profile-name { font-size: 29px; margin-bottom: 13px; letter-spacing: -.035em; }
+  .profile-name span { display: block; margin: 7px 0 0; font-size: 20px; }
+  .profile-details { font-size: 13px; line-height: 1.65; }
+  .profile-details p { margin-bottom: 10px; }
+  .contact-links { gap: 5px 14px; font-size: 13px; margin-top: 14px; }
+  .recruitment { padding: 13px 15px; font-size: 14px; }
+  h2 { font-size: 21px; margin-top: 32px; gap: 12px; }
+  .timeline { grid-template-columns: 96px minmax(0,1fr); gap: 16px 13px; }
+  .timeline dt, .timeline .detail { font-size: 13px; }
+  .news li { grid-template-columns: 70px minmax(0,1fr); gap: 10px; }
+  .news time { font-size: 12px; padding-top: 3px; }
+  .pub-controls { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .pub-controls label:first-child { grid-column: 1/-1; }
+  .pub-controls input, .pub-controls select { font-size: 16px; }
+  .year-nav { gap: 8px 18px; }
+  .paper-title { font-size: 15px; }
+  .paper-authors { font-size: 13px; }
+  .paper-meta { font-size: 12px; }
+  .members { grid-template-columns: repeat(2, minmax(0,1fr)); gap: 0 20px; }
+  .member-name { font-size: 17px; }
+  .member-cn { font-size: 14px; }
+  .section-note { font-size: 10px; }
+  .award-list li { padding: 20px 0; }
+  footer { margin-top: 39px; font-size: 11px; }
+}
+@media (max-width: 360px) { .site { padding: 0 16px; } .profile { grid-template-columns: minmax(0,1fr) 80px; gap: 12px; } .portrait { width: 80px; } .profile-name { font-size: 25px; } .menu a { font-size: 12px; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+@media print { body::before, body::after, .profile::before { display: none; } .site { background: #fff; box-shadow: none; } .site-header, .pub-controls, .filter-status, .year-nav, .skip-link { display: none; } .site { max-width: none; margin: 0; padding: 0; } main { padding: 0; } body { font-size: 11pt; } .publication, .member { break-inside: avoid; } a { color: inherit; } }
