@@ -10,7 +10,7 @@ ROOT = Path(__file__).resolve().parent
 UPDATED = 'September 2026'
 # Version every internal page and asset together, so cached old HTML cannot
 # reappear when navigating from an updated page.
-_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', *sorted((ROOT/'data').glob('*.json'))]
+_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
 SITE_VERSION = hashlib.sha256(b''.join(p.read_bytes() for p in _VERSION_INPUTS)).hexdigest()[:12]
 SCHOLAR = 'https://scholar.google.com/citations?user=yFI_RjUAAAAJ&hl=en'
 LAB = 'https://www.nju-link.com/'
@@ -30,7 +30,7 @@ def page(filename, title, content):
   <meta name="description" content="Jiaheng Liu (刘佳恒), Assistant Professor at Nanjing University. Research in foundation models, code intelligence, reinforcement learning, agents, and evaluation.">
   <meta name="theme-color" content="#660066">
   <title>{e(title)} | Jiaheng Liu · Nanjing University</title>
-  <link rel="icon" href="images/link-lab-web.png" type="image/png">
+  <link rel="icon" href="images/favicon.png?v={SITE_VERSION}" type="image/png" sizes="128x128">
   <link rel="stylesheet" href="assets/css/academic.css?v={SITE_VERSION}">
   {script}
 </head>

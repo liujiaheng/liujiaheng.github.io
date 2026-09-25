@@ -1,14 +1,12 @@
 :root { --navy: #660066; --accent: #660066; --ink: #512452; --muted: #7a567d; --line: #e7dce9; --soft: #f5eff7; }
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 24px; }
-body { position: relative; isolation: isolate; margin: 0; background: #fdfafd; color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; -webkit-font-smoothing: antialiased; }
-/* Decorative original photo: blur and tint are presentation effects only. */
-body::before { content: ''; position: fixed; inset: -12px; z-index: -2; pointer-events: none; background: url('../../images/nju-campus.jpg') center 48% / cover no-repeat; filter: blur(5px) saturate(.65); opacity: .25; }
-body::after { content: ''; position: fixed; inset: 0; z-index: -1; pointer-events: none; background: linear-gradient(180deg, rgba(253,250,253,.45), rgba(253,250,253,.6) 52%, rgba(253,250,253,.88)); }
+body { position: relative; isolation: isolate; margin: 0; background: #fff; color: var(--ink); font: 16px/1.7 -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif; -webkit-font-smoothing: antialiased; }
+/* A single campus photograph in the profile header; text stays on a light overlay. */
 a { color: var(--accent); text-decoration: none; text-underline-offset: 4px; }
 a:hover { text-decoration: underline; }
 a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.site { max-width: 1120px; min-height: 100vh; margin: 0 auto; padding: 0 36px; background: rgba(255,255,255,.91); box-shadow: 0 0 100px rgba(255,255,255,.45); }
+.site { max-width: 1120px; min-height: 100vh; margin: 0 auto; padding: 0 36px; background: #fff; }
 .site-header { display: flex; align-items: center; justify-content: space-between; gap: 28px; padding: 24px 0; border-bottom: 1px solid var(--line); }
 .lab-brand { display: flex; gap: 13px; align-items: center; flex-shrink: 0; color: var(--navy); }
 .lab-brand:hover { text-decoration: none; }
@@ -29,7 +27,7 @@ ul { padding-left: 21px; margin: 0 0 20px; }
 li { padding-left: 3px; margin-bottom: 7px; }
 strong { font-weight: 650; }
 .profile { position: relative; isolation: isolate; display: grid; grid-template-columns: minmax(0, 1fr) 170px; gap: 50px; align-items: center; margin: 4px 0 31px; }
-.profile::before { content: ''; position: absolute; inset: -23px -20px; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,.97) 0%, rgba(255,255,255,.86) 42%, rgba(255,255,255,.55) 100%), url('../../images/nju-campus.jpg') center 50% / cover no-repeat; filter: blur(2px); border-radius: 8px; }
+.profile::before { content: ''; position: absolute; inset: -23px -20px; z-index: -1; pointer-events: none; background: linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.9) 42%, rgba(255,255,255,.22) 100%), url('../../images/nju-campus.jpg') center 50% / cover no-repeat; border-radius: 8px; }
 .portrait { grid-column: 2; grid-row: 1; width: 161px; height: 239px; display: block; object-fit: contain; justify-self: end; }
 .profile-details { grid-column: 1; grid-row: 1; }
 .profile-name { color: var(--navy); font-size: 38px; letter-spacing: -.045em; line-height: 1.25; font-weight: 700; margin: 0 0 12px; }
@@ -116,6 +114,7 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
   main { padding-top: 29px; }
   .page-title { font-size: 30px; }
   .profile { grid-template-columns: minmax(0,1fr) 98px; gap: 17px; align-items: start; }
+  .profile::before { inset: -16px -12px; background-image: linear-gradient(90deg, rgba(255,255,255,.96), rgba(255,255,255,.88) 55%, rgba(255,255,255,.4)), url('../../images/nju-campus.jpg'); }
   .portrait { width: 98px; height: auto; margin-top: 5px; }
   .profile-name { font-size: 29px; margin-bottom: 13px; letter-spacing: -.035em; }
   .profile-name span { display: block; margin: 7px 0 0; font-size: 20px; }
