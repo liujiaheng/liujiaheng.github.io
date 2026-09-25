@@ -30,7 +30,7 @@ def page(filename, title, content):
   <meta name="description" content="Jiaheng Liu (刘佳恒), Assistant Professor at Nanjing University. Research in foundation models, code intelligence, reinforcement learning, agents, and evaluation.">
   <meta name="theme-color" content="#660066">
   <title>{e(title)} | Jiaheng Liu · Nanjing University</title>
-  <link rel="icon" href="images/link-lab.png" type="image/png">
+  <link rel="icon" href="images/link-lab-web.png" type="image/png">
   <link rel="stylesheet" href="assets/css/academic.css?v={SITE_VERSION}">
   {script}
 </head>
@@ -39,7 +39,7 @@ def page(filename, title, content):
 <div class="site">
   <header class="site-header">
     <a class="lab-brand" href="index.html" aria-label="Jiaheng Liu homepage">
-      <img src="images/link-lab.png" width="2233" height="3072" alt="LINK Lab logo">
+      <img src="images/link-lab-web.png" width="2233" height="3072" alt="LINK Lab logo">
       <span>Jiaheng Liu<small>NANJING UNIVERSITY · LINK LAB</small></span>
     </a>
     <nav class="menu" aria-label="Main navigation">{nav}</nav>
