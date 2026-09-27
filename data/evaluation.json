@@ -7,8 +7,8 @@
       "tagline": "From code completion to complete software projects.",
       "description": "Multilingual programming, repository-level development, environment setup, and visually grounded software engineering.",
       "examples": [
-        "SWE-Compass",
         "WebCompass",
+        "ArtifactsBench",
         "NL2Repo-Bench"
       ]
     },
@@ -18,9 +18,9 @@
       "tagline": "Planning, acting, and learning through interaction.",
       "description": "Tool use, everyday online tasks, long-horizon workflows, and agents that build and improve their own skills.",
       "examples": [
-        "MTU-Bench",
         "ClawBench",
-        "MMG2Skill-Bench"
+        "Workflow-GYM",
+        "MTU-Bench"
       ]
     },
     {
@@ -29,9 +29,9 @@
       "tagline": "Turning information into useful work.",
       "description": "Deep research, evidence synthesis, report generation, table analysis, and professional knowledge work.",
       "examples": [
-        "DR³-Eval",
+        "MM-BrowseComp",
         "TVIR-Bench",
-        "TableAgent-Bench"
+        "DR³-Eval"
       ]
     },
     {
@@ -42,7 +42,7 @@
       "examples": [
         "SuperGPQA",
         "KOR-Bench",
-        "ACADREASON"
+        "KINA"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "description": "Visual reasoning, audio-visual understanding, video captioning, long videos, and spatial perception.",
       "examples": [
         "OmniVideoBench",
-        "MVU-Eval",
+        "OmniCap-IF",
         "SimpleVQA"
       ]
     },
@@ -85,19 +85,19 @@
       "description": "Factual knowledge, multimodal hallucination, jailbreak resistance, over-refusal, and human-centered behavior.",
       "examples": [
         "Chinese SimpleQA",
-        "OmniHalluc-L",
+        "Chinese SafetyQA",
         "SafeDialBench"
       ]
     },
     {
       "id": "evaluation-methods",
-      "name": "Reward & Evaluation Methods",
-      "tagline": "Evaluating the evaluators, and diagnosing models.",
-      "description": "Reward models, reasoning critique, evaluation efficiency, model compression, and learned judges.",
+      "name": "Reward Modeling",
+      "tagline": "Evaluating reward models and reasoning feedback.",
+      "description": "Reward models, reasoning critique, learned judges, and efficient evaluation.",
       "examples": [
         "DeltaBench",
         "Long-form RewardBench",
-        "Think-J"
+        "CriticLeanBench"
       ]
     }
   ],
