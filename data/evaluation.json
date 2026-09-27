@@ -1,0 +1,1530 @@
+{
+  "updated": "2026-09-27",
+  "categories": [
+    {
+      "id": "coding",
+      "name": "Coding & Software Engineering",
+      "tagline": "From code completion to complete software projects.",
+      "description": "Multilingual programming, repository-level development, environment setup, and visually grounded software engineering.",
+      "examples": [
+        "SWE-Compass",
+        "WebCompass",
+        "NL2Repo-Bench"
+      ]
+    },
+    {
+      "id": "agents",
+      "name": "Agents & Tool Use",
+      "tagline": "Planning, acting, and learning through interaction.",
+      "description": "Tool use, everyday online tasks, long-horizon workflows, and agents that build and improve their own skills.",
+      "examples": [
+        "MTU-Bench",
+        "ClawBench",
+        "MMG2Skill-Bench"
+      ]
+    },
+    {
+      "id": "cowork",
+      "name": "Deep Research & Cowork",
+      "tagline": "Turning information into useful work.",
+      "description": "Deep research, evidence synthesis, report generation, table analysis, and professional knowledge work.",
+      "examples": [
+        "DR³-Eval",
+        "TVIR-Bench",
+        "TableAgent-Bench"
+      ]
+    },
+    {
+      "id": "reasoning",
+      "name": "Knowledge & Reasoning",
+      "tagline": "What models know and how they reason.",
+      "description": "Academic knowledge, mathematical concepts, rule-based reasoning, and dynamically composed problems.",
+      "examples": [
+        "SuperGPQA",
+        "KOR-Bench",
+        "ACADREASON"
+      ]
+    },
+    {
+      "id": "instructions",
+      "name": "Instructions & Long Context",
+      "tagline": "Following intent across turns and long inputs.",
+      "description": "Instruction following, multi-turn dialogue, role consistency, and long-context understanding and generation.",
+      "examples": [
+        "Inverse IFEval",
+        "MT-Bench-101",
+        "HelloBench"
+      ]
+    },
+    {
+      "id": "multimodal",
+      "name": "Multimodal Understanding",
+      "tagline": "Understanding images, video, audio, and space.",
+      "description": "Visual reasoning, audio-visual understanding, video captioning, long videos, and spatial perception.",
+      "examples": [
+        "OmniVideoBench",
+        "MVU-Eval",
+        "SimpleVQA"
+      ]
+    },
+    {
+      "id": "generation",
+      "name": "Generation & World Models",
+      "tagline": "Creating, editing, and maintaining coherent worlds.",
+      "description": "Audio-video generation and editing, controllable content, procedural 3D modeling, and interactive world models.",
+      "examples": [
+        "T2AV-Compass",
+        "AVE-Compass",
+        "HappyWorld-Bench"
+      ]
+    },
+    {
+      "id": "trust",
+      "name": "Safety & Factuality",
+      "tagline": "Evaluating whether outputs can be trusted.",
+      "description": "Factual knowledge, multimodal hallucination, jailbreak resistance, over-refusal, and human-centered behavior.",
+      "examples": [
+        "Chinese SimpleQA",
+        "OmniHalluc-L",
+        "SafeDialBench"
+      ]
+    },
+    {
+      "id": "evaluation-methods",
+      "name": "Reward & Evaluation Methods",
+      "tagline": "Evaluating the evaluators, and diagnosing models.",
+      "description": "Reward models, reasoning critique, evaluation efficiency, model compression, and learned judges.",
+      "examples": [
+        "DeltaBench",
+        "Long-form RewardBench",
+        "Think-J"
+      ]
+    }
+  ],
+  "entries": [
+    {
+      "paper_id": "paper-fa81781b64",
+      "name": "SWE-Compass",
+      "category": "coding",
+      "section": "Software engineering agents",
+      "summary": "Evaluates agentic coding across diverse tasks in real software repositories.",
+      "tags": [
+        "Coding agents",
+        "Repositories"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2511.05459"
+      ]
+    },
+    {
+      "paper_id": "paper-bbfd4cfe9a",
+      "name": "NL2Repo-Bench",
+      "category": "coding",
+      "section": "Software engineering agents",
+      "summary": "Tests long-horizon development of complete repositories from natural-language requirements.",
+      "tags": [
+        "Repository generation",
+        "Long horizon"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.12730"
+      ]
+    },
+    {
+      "paper_id": "paper-ee2462d8dd",
+      "name": "M²EVAL",
+      "category": "coding",
+      "section": "Multimodal & interactive coding",
+      "summary": "Evaluates multilingual programming from visual design diagrams and textual specifications.",
+      "tags": [
+        "Visual coding",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2507.08719"
+      ]
+    },
+    {
+      "paper_id": "paper-534ac5f907",
+      "name": "M²RC-EVAL",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Evaluates multilingual repository-level code completion using cross-file context.",
+      "tags": [
+        "Code completion",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.763/"
+      ]
+    },
+    {
+      "paper_id": "paper-3bc6194647",
+      "name": "McEval",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Tests code understanding, completion, and generation across programming languages.",
+      "tags": [
+        "Code generation",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2406.07436"
+      ]
+    },
+    {
+      "paper_id": "paper-229ad8789e",
+      "name": "Multi-Docker-Eval",
+      "category": "coding",
+      "section": "Software engineering agents",
+      "summary": "Evaluates automatic setup of executable environments for real software projects.",
+      "tags": [
+        "Environment setup",
+        "Coding agents"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-acl.889/"
+      ]
+    },
+    {
+      "paper_id": "paper-f8ddf4b177",
+      "name": "MdEval",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Measures code debugging across multiple programming languages.",
+      "tags": [
+        "Debugging",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-acl.1041/"
+      ]
+    },
+    {
+      "paper_id": "paper-8d0e813e91",
+      "name": "GameLogicBench",
+      "category": "coding",
+      "section": "Multimodal & interactive coding",
+      "summary": "Tests runtime gameplay logic with reproducible assertions at each simulation tick.",
+      "tags": [
+        "Game development",
+        "Executable checks"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.21562"
+      ]
+    },
+    {
+      "paper_id": "paper-acd42e5de9",
+      "name": "LoopsBench",
+      "category": "coding",
+      "section": "Software engineering agents",
+      "summary": "Evaluates the execution loops used by coding agents in long-horizon software development.",
+      "tags": [
+        "Coding agents",
+        "Long horizon"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.00267"
+      ]
+    },
+    {
+      "paper_id": "paper-50c9dc2d14",
+      "name": "WebCompass",
+      "category": "coding",
+      "section": "Multimodal & interactive coding",
+      "summary": "Evaluates multimodal agents on web development from visual inputs, instructions, and interaction.",
+      "tags": [
+        "Web development",
+        "Multimodal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2604.18224"
+      ]
+    },
+    {
+      "paper_id": "paper-f350189c95",
+      "name": "CodeTraceBench",
+      "category": "coding",
+      "section": "Software engineering agents",
+      "summary": "Diagnoses coding-agent failures through traceable execution states and trajectories.",
+      "tags": [
+        "Agent trajectories",
+        "Failure diagnosis"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2604.11641"
+      ]
+    },
+    {
+      "paper_id": "paper-a24ad74cb3",
+      "name": "IFEvalCode",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Evaluates whether generated code satisfies both functional requirements and explicit instructions.",
+      "tags": [
+        "Instruction following",
+        "Code generation"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2507.22462"
+      ]
+    },
+    {
+      "paper_id": "paper-58974a9f5f",
+      "name": "ArtifactsBench",
+      "category": "coding",
+      "section": "Multimodal & interactive coding",
+      "summary": "Evaluates the visual quality and interactive behavior of generated code artifacts.",
+      "tags": [
+        "Visual quality",
+        "Interaction"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2507.04952"
+      ]
+    },
+    {
+      "paper_id": "paper-6065626936",
+      "name": "CodeCriticBench",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Measures models' ability to critique code and provide useful feedback.",
+      "tags": [
+        "Code critique",
+        "Feedback"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2502.16614"
+      ]
+    },
+    {
+      "paper_id": "paper-6c9fe13428",
+      "name": "FullStack Bench",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Evaluates programming ability across full-stack development scenarios.",
+      "tags": [
+        "Full-stack coding",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2412.00535"
+      ]
+    },
+    {
+      "paper_id": "paper-4441b37414",
+      "name": "R²C²-Bench",
+      "category": "coding",
+      "section": "Code foundations & completion",
+      "summary": "Evaluates code completion in real-world repositories.",
+      "tags": [
+        "Repositories",
+        "Code completion"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2406.01359"
+      ]
+    },
+    {
+      "paper_id": "paper-e63439d4cf",
+      "name": "WorldTravel",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Evaluates multimodal travel planning under tightly coupled constraints.",
+      "tags": [
+        "Planning",
+        "Multimodal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2602.08367"
+      ]
+    },
+    {
+      "paper_id": "paper-a4699e45c9",
+      "name": "MTU-Bench",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Tests tool use at multiple granularities, including multi-turn and multi-tool interactions.",
+      "tags": [
+        "Tool use",
+        "Multi-turn"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/4d13b2d99519c5415661dad44ab7edcd-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-9e1c257732",
+      "name": "HarnessDev",
+      "category": "agents",
+      "section": "Skills & self-improvement",
+      "summary": "Tests whether models can create and evolve their own agent harnesses.",
+      "tags": [
+        "Self-improvement",
+        "Agent harnesses"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.01437"
+      ]
+    },
+    {
+      "paper_id": "paper-599eca74e7",
+      "name": "ASPIRE",
+      "category": "agents",
+      "section": "Skills & self-improvement",
+      "summary": "Evaluates whether models can improve themselves starting from vague goals.",
+      "tags": [
+        "Self-improvement",
+        "Goal formulation"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.31111"
+      ]
+    },
+    {
+      "paper_id": "paper-92b71a4156",
+      "name": "S³Gym",
+      "category": "agents",
+      "section": "Skills & self-improvement",
+      "summary": "Studies whether self-testing and self-judging translate into self-improvement.",
+      "tags": [
+        "Self-testing",
+        "Self-improvement"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.31100"
+      ]
+    },
+    {
+      "paper_id": "paper-4f5dc9b4ba",
+      "name": "StartupBench",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Evaluates general-purpose agents on market-validated, end-to-end workflows.",
+      "tags": [
+        "Cowork",
+        "End-to-end workflows"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.17800"
+      ]
+    },
+    {
+      "paper_id": "paper-3aee97f405",
+      "name": "Workflow-GYM",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Evaluates long-horizon computer-use tasks in real professional software environments.",
+      "tags": [
+        "Computer use",
+        "Long horizon"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.11042"
+      ]
+    },
+    {
+      "paper_id": "paper-7727fea8c8",
+      "name": "MMG2Skill-Bench",
+      "category": "agents",
+      "section": "Skills & self-improvement",
+      "summary": "Tests whether agents can turn multimodal guides into reusable, evolving skills.",
+      "tags": [
+        "Skill learning",
+        "Multimodal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.01993"
+      ]
+    },
+    {
+      "paper_id": "paper-b999405b3f",
+      "name": "ClawBench",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Evaluates completion of everyday online tasks by AI agents.",
+      "tags": [
+        "Online tasks",
+        "Task completion"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2604.08523"
+      ]
+    },
+    {
+      "paper_id": "paper-ada0827847",
+      "name": "EcoGym",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Evaluates long-horizon planning and execution in interactive economic environments.",
+      "tags": [
+        "Planning",
+        "Interactive environments"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2602.09514"
+      ]
+    },
+    {
+      "paper_id": "paper-7bf34c0cb0",
+      "name": "ING-VP",
+      "category": "agents",
+      "section": "Planning & task execution",
+      "summary": "Tests spatial planning and interaction in vision-based games.",
+      "tags": [
+        "Visual agents",
+        "Spatial planning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2410.06555"
+      ]
+    },
+    {
+      "paper_id": "paper-0684ba41c9",
+      "name": "TableAgent-Bench",
+      "category": "cowork",
+      "section": "Tables & professional tasks",
+      "summary": "Evaluates multi-turn agentic table question answering in realistic settings.",
+      "tags": [
+        "Tables",
+        "Tool use"
+      ],
+      "kind": "benchmark",
+      "source_urls": []
+    },
+    {
+      "paper_id": "paper-c0efd6aee4",
+      "name": "TableBench",
+      "category": "cowork",
+      "section": "Tables & professional tasks",
+      "summary": "Tests complex question answering and reasoning over tables.",
+      "tags": [
+        "Tables",
+        "Reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2408.09174"
+      ]
+    },
+    {
+      "paper_id": "paper-0a68fed32a",
+      "name": "M3TQA-BENCH",
+      "category": "cowork",
+      "section": "Tables & professional tasks",
+      "summary": "Evaluates multilingual, multitask table question answering.",
+      "tags": [
+        "Tables",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-acl.1134/"
+      ]
+    },
+    {
+      "paper_id": "paper-ffaa0a2060",
+      "name": "xDailyBench",
+      "category": "cowork",
+      "section": "Tables & professional tasks",
+      "summary": "Evaluates professional consultation on real-life problems and implicit user needs.",
+      "tags": [
+        "Professional knowledge",
+        "User intent"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.07784"
+      ]
+    },
+    {
+      "paper_id": "paper-8ffe682a7f",
+      "name": "PAW-Bench",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Evaluates academic paper-writing tasks associated with multi-turn generation research.",
+      "tags": [
+        "Academic writing",
+        "Long-form generation"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.25826"
+      ]
+    },
+    {
+      "paper_id": "paper-5596fe1349",
+      "name": "TVIR-Bench",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Evaluates research reports that interleave text and visual evidence.",
+      "tags": [
+        "Deep research",
+        "Multimodal reports"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.02320"
+      ]
+    },
+    {
+      "paper_id": "paper-07374dfb6d",
+      "name": "TELBench",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Localizes errors within the trajectories of deep-research agents.",
+      "tags": [
+        "Deep research",
+        "Failure diagnosis"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.02060"
+      ]
+    },
+    {
+      "paper_id": "paper-518a4b8b45",
+      "name": "DR³-Eval",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Evaluates deep-research agents in realistic, reproducible settings with multiple files and modalities.",
+      "tags": [
+        "Deep research",
+        "Reproducibility"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2604.14683"
+      ]
+    },
+    {
+      "paper_id": "paper-031291c782",
+      "name": "FINDER",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Evaluates the usefulness and overall quality of deep-research reports.",
+      "tags": [
+        "Deep research",
+        "Report quality"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.01948"
+      ]
+    },
+    {
+      "paper_id": "paper-34ad35ab19",
+      "name": "MM-BrowseComp",
+      "category": "cowork",
+      "section": "Research & report generation",
+      "summary": "Evaluates multimodal web browsing and information-seeking agents.",
+      "tags": [
+        "Web browsing",
+        "Multimodal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2508.13186"
+      ]
+    },
+    {
+      "paper_id": "paper-f5ebcb4e8f",
+      "name": "MMTableBench",
+      "category": "cowork",
+      "section": "Tables & professional tasks",
+      "summary": "Tests table question answering across reasoning demands and visual layout complexity.",
+      "tags": [
+        "Tables",
+        "Document understanding"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://github.com/TableBench/MMTableBench"
+      ]
+    },
+    {
+      "paper_id": "paper-df84b87854",
+      "name": "KORGym",
+      "category": "reasoning",
+      "section": "Mathematics & rule-based reasoning",
+      "summary": "Provides dynamic game environments for evaluating language-model reasoning.",
+      "tags": [
+        "Games",
+        "Interactive reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://papers.neurips.cc/paper_files/paper/2025/hash/ebfa4297cd6419f64efe86f657ba49d0-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-08de0745f8",
+      "name": "SuperGPQA",
+      "category": "reasoning",
+      "section": "Academic & domain knowledge",
+      "summary": "Evaluates knowledge and reasoning across 285 graduate-level disciplines.",
+      "tags": [
+        "Academic knowledge",
+        "Multidisciplinary"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.nips.cc/paper_files/paper/2025/hash/a3c5af1f56fc73eef1ba0f442739f5ca-Abstract-Datasets_and_Benchmarks_Track.html"
+      ]
+    },
+    {
+      "paper_id": "paper-94d4ba77bb",
+      "name": "KOR-Bench",
+      "category": "reasoning",
+      "section": "Mathematics & rule-based reasoning",
+      "summary": "Tests rule-based reasoning designed to be orthogonal to prior knowledge.",
+      "tags": [
+        "Logic",
+        "Rule following"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2025/hash/c6f5851a0d9cb435ed8b50e87bd6a257-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-5013507b13",
+      "name": "Owl-Bench",
+      "category": "reasoning",
+      "section": "Academic & domain knowledge",
+      "summary": "Evaluates knowledge and tasks in IT operations within the OWL study.",
+      "tags": [
+        "IT operations",
+        "Domain knowledge"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2024/hash/6581ff85ba0ca663513d5f65b25f6631-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-7cb9542e03",
+      "name": "ConceptMath",
+      "category": "reasoning",
+      "section": "Mathematics & rule-based reasoning",
+      "summary": "Evaluates mathematical reasoning by concept in both Chinese and English.",
+      "tags": [
+        "Mathematics",
+        "Bilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2024.findings-acl.407/"
+      ]
+    },
+    {
+      "paper_id": "paper-44fb5cabbf",
+      "name": "KINA",
+      "category": "reasoning",
+      "section": "Academic & domain knowledge",
+      "summary": "Evaluates academic knowledge across disciplines.",
+      "tags": [
+        "Academic knowledge",
+        "Multidisciplinary"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.05104"
+      ]
+    },
+    {
+      "paper_id": "paper-a1a71fb271",
+      "name": "Encyclo-K",
+      "category": "reasoning",
+      "section": "Academic & domain knowledge",
+      "summary": "Tests understanding of dynamically composed knowledge statements.",
+      "tags": [
+        "Knowledge",
+        "Compositionality"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.24867"
+      ]
+    },
+    {
+      "paper_id": "paper-03ddece1e3",
+      "name": "ACADREASON",
+      "category": "reasoning",
+      "section": "Academic & domain knowledge",
+      "summary": "Tests reasoning on problems drawn from academic research.",
+      "tags": [
+        "Scientific reasoning",
+        "Academic research"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/59c08508131c3a50991f42dae7f69e1c-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-a6444645dc",
+      "name": "Inverse IFEval",
+      "category": "instructions",
+      "section": "Instruction following & dialogue",
+      "summary": "Tests whether models follow real instructions that conflict with learned training conventions.",
+      "tags": [
+        "Instruction following",
+        "Robustness"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d1a1e8713fcd5626656553c82f7c3b26-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-66bdb08bb4",
+      "name": "RoleAgentBench",
+      "category": "instructions",
+      "section": "Instruction following & dialogue",
+      "summary": "Evaluates role-playing agents built from scripts through interactive tasks.",
+      "tags": [
+        "Role playing",
+        "Multi-turn"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/5875aca1ef70285a35940afbbce0f9fb-Abstract-Datasets_and_Benchmarks_Track.html"
+      ]
+    },
+    {
+      "paper_id": "paper-c59ef25c67",
+      "name": "RoleBench",
+      "category": "instructions",
+      "section": "Instruction following & dialogue",
+      "summary": "Evaluates role-playing abilities and consistency in language models.",
+      "tags": [
+        "Role playing",
+        "Dialogue"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2024.findings-acl.878/"
+      ]
+    },
+    {
+      "paper_id": "paper-cf73007a3c",
+      "name": "MT-Bench-101",
+      "category": "instructions",
+      "section": "Instruction following & dialogue",
+      "summary": "Provides fine-grained evaluation of multi-turn dialogue abilities.",
+      "tags": [
+        "Dialogue",
+        "Multi-turn"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2024.acl-long.401/"
+      ]
+    },
+    {
+      "paper_id": "paper-334165c297",
+      "name": "HelloBench",
+      "category": "instructions",
+      "section": "Long-context understanding & generation",
+      "summary": "Evaluates the ability to generate long, coherent text.",
+      "tags": [
+        "Long-form generation",
+        "Writing"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2409.16191"
+      ]
+    },
+    {
+      "paper_id": "paper-663dd6ed6f",
+      "name": "LongIns",
+      "category": "instructions",
+      "section": "Long-context understanding & generation",
+      "summary": "Tests instruction following and multitask reasoning over long contexts.",
+      "tags": [
+        "Long context",
+        "Instruction following"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2406.17588"
+      ]
+    },
+    {
+      "paper_id": "paper-a905c2e6a4",
+      "name": "OmniVideoBench",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Evaluates joint audio-visual understanding in omni-modal language models.",
+      "tags": [
+        "Audio-visual",
+        "Omni-modal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/df5e4da78dfbbfbfad3fcff0c2ce3bd7-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-5fa5923ca1",
+      "name": "IF-VidCap",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Tests whether video-captioning models follow user instructions.",
+      "tags": [
+        "Video captioning",
+        "Instruction following"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2510.18726"
+      ]
+    },
+    {
+      "paper_id": "paper-a138e7af17",
+      "name": "OmniBench",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Evaluates joint understanding of text, images, and audio.",
+      "tags": [
+        "Omni-modal",
+        "Cross-modal reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2409.15272"
+      ]
+    },
+    {
+      "paper_id": "paper-56919c6557",
+      "name": "MVU-Eval",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Tests understanding and reasoning across multiple videos.",
+      "tags": [
+        "Multi-video",
+        "Reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://papers.nips.cc/paper_files/paper/2025/hash/4dbb159f2c68b359b3b6ed7dd039481c-Abstract-Datasets_and_Benchmarks_Track.html"
+      ]
+    },
+    {
+      "paper_id": "paper-82b3a4051b",
+      "name": "CII-Bench",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Tests understanding of implicit meanings in images within Chinese cultural contexts.",
+      "tags": [
+        "Cultural understanding",
+        "Visual reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.700/"
+      ]
+    },
+    {
+      "paper_id": "paper-dcf4a6e64c",
+      "name": "ChineseSimpleVQA",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Evaluates factual question answering grounded in images and Chinese knowledge.",
+      "tags": [
+        "Visual factuality",
+        "Chinese"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.findings-acl.844/"
+      ]
+    },
+    {
+      "paper_id": "paper-32c4e63ce2",
+      "name": "II-Bench",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Evaluates recognition of implications and deeper meanings in images.",
+      "tags": [
+        "Visual reasoning",
+        "Implicit meaning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.neurips.cc/paper_files/paper/2024/hash/52764eb83bf0a0bd32766ce5c01612e5-Abstract-Datasets_and_Benchmarks_Track.html"
+      ]
+    },
+    {
+      "paper_id": "paper-c25a202a0b",
+      "name": "M2C",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Evaluates multimodal manga text completion in two languages.",
+      "tags": [
+        "Multimodal completion",
+        "Bilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2023.findings-emnlp.661/"
+      ]
+    },
+    {
+      "paper_id": "paper-b6a84983fc",
+      "name": "MIO",
+      "category": "multimodal",
+      "section": "Spatial & physical understanding",
+      "summary": "Provides a held-out material-segmentation evaluation set alongside the MaterialSeg3D method.",
+      "tags": [
+        "Materials",
+        "Segmentation"
+      ],
+      "kind": "companion",
+      "source_urls": [
+        "https://arxiv.org/abs/2404.13923"
+      ]
+    },
+    {
+      "paper_id": "paper-395a83faa6",
+      "name": "LD-T3D",
+      "category": "multimodal",
+      "section": "Spatial & physical understanding",
+      "summary": "Evaluates retrieval of 3D models from textual descriptions.",
+      "tags": [
+        "3D retrieval",
+        "Text grounding"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://github.com/yuanze1024/LD-T3D.github.io"
+      ]
+    },
+    {
+      "paper_id": "paper-278e443fe9",
+      "name": "MMRA",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Tests relational association across multiple images and levels of granularity.",
+      "tags": [
+        "Multi-image",
+        "Relations"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-eacl.287/"
+      ]
+    },
+    {
+      "paper_id": "paper-5c664127b5",
+      "name": "MT-Video-Bench",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Evaluates video understanding through multi-turn dialogues.",
+      "tags": [
+        "Video understanding",
+        "Multi-turn"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-acl.397/"
+      ]
+    },
+    {
+      "paper_id": "paper-231ca807db",
+      "name": "OmniCap-IF",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Tests content and format instruction following in omni-video captioning.",
+      "tags": [
+        "Omni-modal",
+        "Instruction following"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.08572"
+      ]
+    },
+    {
+      "paper_id": "paper-e211489736",
+      "name": "ViDiC-1K",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Evaluates descriptions of similarities and differences between paired videos.",
+      "tags": [
+        "Video comparison",
+        "Captioning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.03405"
+      ]
+    },
+    {
+      "paper_id": "paper-3ffaa534b6",
+      "name": "ScaleLong",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Evaluates long-video understanding across multiple temporal scales.",
+      "tags": [
+        "Long video",
+        "Temporal reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/fa1cfe4e956d85e016b1f8f49b189a0b-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-c9db461ca3",
+      "name": "IV-Bench",
+      "category": "multimodal",
+      "section": "Audio & video understanding",
+      "summary": "Tests image-grounded video perception and reasoning.",
+      "tags": [
+        "Video understanding",
+        "Visual grounding"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2504.15415"
+      ]
+    },
+    {
+      "paper_id": "paper-01c663576e",
+      "name": "SimpleVQA",
+      "category": "multimodal",
+      "section": "Images & visual reasoning",
+      "summary": "Evaluates factual question answering with multimodal inputs.",
+      "tags": [
+        "Visual factuality",
+        "Question answering"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://openaccess.thecvf.com/content/ICCV2025/html/Cheng_SimpleVQA_Multimodal_Factuality_Evaluation_for_Multimodal_Large_Language_Models_ICCV_2025_paper.html"
+      ]
+    },
+    {
+      "paper_id": "paper-1785e247ae",
+      "name": "PhysGame",
+      "category": "multimodal",
+      "section": "Spatial & physical understanding",
+      "summary": "Tests recognition of physical commonsense violations in gameplay videos.",
+      "tags": [
+        "Physical reasoning",
+        "Video"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2412.01800"
+      ]
+    },
+    {
+      "paper_id": "paper-144e34eedd",
+      "name": "T2AV-Compass",
+      "category": "generation",
+      "section": "Audio-video generation & editing",
+      "summary": "Evaluates text-to-audio-video generation through a unified framework.",
+      "tags": [
+        "Audio-video generation",
+        "Text alignment"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2512.21094"
+      ],
+      "links": {
+        "Project": "https://nju-link.github.io/T2AV-Compass/"
+      }
+    },
+    {
+      "paper_id": "paper-ebb921c086",
+      "name": "VidCapBench",
+      "category": "generation",
+      "section": "Audio-video generation & editing",
+      "summary": "Evaluates video captions used to support controllable text-to-video generation.",
+      "tags": [
+        "Video captioning",
+        "Controllability"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.findings-acl.449/"
+      ]
+    },
+    {
+      "paper_id": "paper-d8b0bab33c",
+      "name": "HappyWorld-Bench",
+      "category": "generation",
+      "section": "3D & world models",
+      "summary": "Evaluates generated worlds for state consistency and responsiveness across video, spatial, and embodied tracks.",
+      "tags": [
+        "World models",
+        "State consistency"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2609.24308"
+      ]
+    },
+    {
+      "paper_id": "paper-271e71523f",
+      "name": "MechBench-36",
+      "category": "generation",
+      "section": "3D & world models",
+      "summary": "Provides a companion evaluation set for multi-part procedural 3D modeling.",
+      "tags": [
+        "Procedural 3D",
+        "Controllability"
+      ],
+      "kind": "companion",
+      "source_urls": [
+        "https://arxiv.org/abs/2608.26238"
+      ]
+    },
+    {
+      "paper_id": "paper-292564dd23",
+      "name": "AVE-Compass",
+      "category": "generation",
+      "section": "Audio-video generation & editing",
+      "summary": "Evaluates instruction-driven audio-video editing abilities.",
+      "tags": [
+        "Audio-video editing",
+        "Instruction following"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2607.24821"
+      ]
+    },
+    {
+      "paper_id": "paper-0658ed34e1",
+      "name": "P3D-Bench",
+      "category": "generation",
+      "section": "3D & world models",
+      "summary": "Tests parametric 3D generation and structural reasoning in multimodal models.",
+      "tags": [
+        "3D generation",
+        "Structural reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.11152"
+      ]
+    },
+    {
+      "paper_id": "paper-77dc066ee0",
+      "name": "CoVEBench",
+      "category": "generation",
+      "section": "Audio-video generation & editing",
+      "summary": "Tests video editing under complex, compositional instructions.",
+      "tags": [
+        "Video editing",
+        "Compositionality"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.08415"
+      ]
+    },
+    {
+      "paper_id": "paper-4ac0789134",
+      "name": "Chinese SimpleQA",
+      "category": "trust",
+      "section": "Factuality & hallucination",
+      "summary": "Evaluates short-form factual question answering in Chinese.",
+      "tags": [
+        "Factuality",
+        "Chinese"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.941/"
+      ]
+    },
+    {
+      "paper_id": "paper-9c0992f559",
+      "name": "Chinese SafetyQA",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Tests the factual accuracy of safety-related knowledge.",
+      "tags": [
+        "Safety knowledge",
+        "Factuality"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.732/"
+      ]
+    },
+    {
+      "paper_id": "paper-8299c08123",
+      "name": "FigStep-benign",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Evaluates over-refusal on benign multimodal requests constructed in the DREAM study.",
+      "tags": [
+        "Over-refusal",
+        "Multimodal safety"
+      ],
+      "kind": "companion",
+      "source_urls": [
+        "https://aclanthology.org/2025.naacl-long.604/"
+      ]
+    },
+    {
+      "paper_id": "paper-dbb49add16",
+      "name": "USB",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Provides unified evaluation of multimodal safety and over-refusal.",
+      "tags": [
+        "Multimodal safety",
+        "Over-refusal"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.acl-long.970/"
+      ]
+    },
+    {
+      "paper_id": "paper-502d59d49e",
+      "name": "OmniHalluc-L",
+      "category": "trust",
+      "section": "Factuality & hallucination",
+      "summary": "Evaluates long-form omni-modal hallucination using counterfactual and modality-perturbation analysis.",
+      "tags": [
+        "Hallucination",
+        "Audio-visual"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2606.03614"
+      ]
+    },
+    {
+      "paper_id": "paper-295079a869",
+      "name": "BSA Bench（Beyond Safe Answers）",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Tests whether reasoning models recognize risk beyond producing superficially safe answers.",
+      "tags": [
+        "Risk awareness",
+        "Safety reasoning"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2505.19690"
+      ]
+    },
+    {
+      "paper_id": "paper-c18d7902e2",
+      "name": "SafeDialBench",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Evaluates safety in multi-turn dialogues with diverse jailbreak attacks.",
+      "tags": [
+        "Jailbreak resistance",
+        "Multi-turn"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://proceedings.iclr.cc/paper_files/paper/2026/hash/cbd213baf0ad155f460ddee93f31d5ee-Abstract-Conference.html"
+      ]
+    },
+    {
+      "paper_id": "paper-b37e4a4ef3",
+      "name": "GIEBench",
+      "category": "trust",
+      "section": "Safety & human alignment",
+      "summary": "Evaluates empathy through the lens of group identity.",
+      "tags": [
+        "Empathy",
+        "Human alignment"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2406.14903"
+      ]
+    },
+    {
+      "paper_id": "paper-dc98942d99",
+      "name": "MSQA",
+      "category": "trust",
+      "section": "Factuality & hallucination",
+      "summary": "Evaluates multilingual and multicultural factual knowledge with natively sourced questions.",
+      "tags": [
+        "Factuality",
+        "Multilingual"
+      ],
+      "kind": "benchmark",
+      "source_urls": []
+    },
+    {
+      "paper_id": "paper-ddbdb75f42",
+      "name": "DeltaBench",
+      "category": "evaluation-methods",
+      "section": "Reasoning critique & reward models",
+      "summary": "Tests error detection in long chains of reasoning.",
+      "tags": [
+        "Reasoning critique",
+        "Error detection"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.acl-long.905/"
+      ]
+    },
+    {
+      "paper_id": "paper-ed63c2ad76",
+      "name": "LIME / MOLIME",
+      "category": "evaluation-methods",
+      "section": "Evaluation efficiency",
+      "summary": "Studies compact multimodal evaluation across multiple tasks.",
+      "tags": [
+        "Multimodal evaluation",
+        "Efficiency"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2025.findings-acl.474/"
+      ]
+    },
+    {
+      "paper_id": "paper-f1ea88bd8d",
+      "name": "PTSBench",
+      "category": "evaluation-methods",
+      "section": "Evaluation efficiency",
+      "summary": "Benchmarks post-training sparsity across algorithms and models.",
+      "tags": [
+        "Model compression",
+        "Sparsity"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2412.07268"
+      ]
+    },
+    {
+      "paper_id": "paper-8e1f04c4d9",
+      "name": "CRBench",
+      "category": "evaluation-methods",
+      "section": "Reasoning critique & reward models",
+      "summary": "Evaluates Chinese reward models alongside the COIG-P preference dataset.",
+      "tags": [
+        "Reward models",
+        "Chinese"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-eacl.288/"
+      ]
+    },
+    {
+      "paper_id": "paper-d453a3e83b",
+      "name": "CoTJudger",
+      "category": "evaluation-methods",
+      "section": "Learned evaluation methods",
+      "summary": "Evaluates chain-of-thought efficiency and redundancy using a graph-based framework.",
+      "tags": [
+        "LLM-as-a-judge",
+        "Reasoning efficiency"
+      ],
+      "kind": "method",
+      "source_urls": [
+        "https://aclanthology.org/2026.findings-acl.2077/"
+      ]
+    },
+    {
+      "paper_id": "paper-47c8d7059f",
+      "name": "CriticLeanBench",
+      "category": "evaluation-methods",
+      "section": "Reasoning critique & reward models",
+      "summary": "Tests critics' judgments of semantic correctness in mathematical formalization.",
+      "tags": [
+        "Formal mathematics",
+        "Critique"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://aclanthology.org/2026.acl-long.139/"
+      ]
+    },
+    {
+      "paper_id": "paper-69e4672049",
+      "name": "Long-form RewardBench",
+      "category": "evaluation-methods",
+      "section": "Reasoning critique & reward models",
+      "summary": "Evaluates reward models for long-form text generation.",
+      "tags": [
+        "Reward models",
+        "Long-form generation"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://arxiv.org/abs/2603.12963"
+      ]
+    },
+    {
+      "paper_id": "paper-cefdc722ed",
+      "name": "Think-J",
+      "category": "evaluation-methods",
+      "section": "Learned evaluation methods",
+      "summary": "Develops generative judges that reason before evaluating model outputs.",
+      "tags": [
+        "LLM-as-a-judge",
+        "Reasoning"
+      ],
+      "kind": "method",
+      "source_urls": [
+        "https://arxiv.org/abs/2505.14268"
+      ]
+    },
+    {
+      "paper_id": "paper-fec2a4b1f4",
+      "name": "DeepResearch RewardBench",
+      "category": "evaluation-methods",
+      "section": "Reasoning critique & reward models",
+      "summary": "Evaluates reward models for assessing deep-research reports.",
+      "tags": [
+        "Reward models",
+        "Deep research"
+      ],
+      "kind": "benchmark",
+      "source_urls": [
+        "https://github.com/zyt2312/DeepResearch-RewardBench-Evaluating-Reward-Models-for-Deep-Research-Report"
+      ]
+    }
+  ]
+}

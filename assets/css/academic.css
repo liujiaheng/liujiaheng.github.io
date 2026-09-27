@@ -13,7 +13,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible
 .lab-brand img { display: block; width: 37px; height: 51px; object-fit: contain; }
 .lab-brand span { font-weight: 650; font-size: 18px; line-height: 1.4; }
 .lab-brand small { display: block; margin-top: 4px; font-size: 9px; font-weight: 600; letter-spacing: .11em; color: var(--muted); }
-.menu { display: flex; flex-wrap: wrap; gap: 24px; }
+.menu { display: flex; flex-wrap: wrap; gap: 20px; }
 .menu a { color: var(--muted); padding: 8px 0; font-size: 14px; border-bottom: 2px solid transparent; }
 .menu a:hover { text-decoration: none; color: var(--navy); }
 .menu a[aria-current="page"] { color: var(--navy); border-bottom-color: var(--accent); font-weight: 650; }
@@ -96,7 +96,7 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
 [hidden] { display: none !important; }
 @media (max-width: 900px) {
   .site { padding: 0 28px; }
-  .site-header { gap: 24px; }
+  .site-header { flex-direction: column; align-items: flex-start; gap: 16px; }
   .menu { gap: 17px; }
   .lab-brand small { font-size: 8px; }
 }
@@ -107,7 +107,8 @@ footer { border-top: 1px solid var(--line); margin-top: 54px; padding: 20px 0 28
   .lab-brand img { width: 31px; height: 43px; }
   .lab-brand span { font-size: 17px; }
   .lab-brand small { font-size: 8px; }
-  .menu { width: 100%; gap: 0; justify-content: space-between; }
+  .menu { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); width: 100%; gap: 0 14px; }
+  .menu a { text-align: center; }
   .menu a { padding: 8px 0 12px; font-size: 13px; }
   main { padding-top: 29px; }
   .page-title { font-size: 30px; }

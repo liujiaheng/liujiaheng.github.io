@@ -10,18 +10,21 @@ ROOT = Path(__file__).resolve().parent
 UPDATED = 'September 2026'
 # Version every internal page and asset together, so cached old HTML cannot
 # reappear when navigating from an updated page.
-_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
+_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'evaluation_site.py', ROOT/'assets/css/evaluation.css', ROOT/'assets/js/evaluation.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
 SITE_VERSION = hashlib.sha256(b''.join(p.read_bytes() for p in _VERSION_INPUTS)).hexdigest()[:12]
 SCHOLAR = 'https://scholar.google.com/citations?user=yFI_RjUAAAAJ&hl=en'
 LAB = 'https://www.nju-link.com/'
-NAV = [('index.html', 'About'), ('pub.html', 'Publications'), ('group.html', 'Members'), ('service.html', 'Services'), ('award.html', 'Honors')]
+NAV = [('index.html', 'About'), ('pub.html', 'Publications'), ('evaluation.html', 'Evaluation'), ('group.html', 'Members'), ('service.html', 'Services'), ('award.html', 'Honors')]
 
 def e(value): return escape(str(value), quote=True)
 
 def page(filename, title, content):
-    nav = ''.join(f'<a href="{f}"' + (' aria-current="page"' if f == filename else '') + f'>{name}</a>' for f,name in NAV)
+    current = 'evaluation.html' if filename.startswith('evaluation') else filename
+    nav = ''.join(f'<a href="{f}"' + (' aria-current="page"' if f == current else '') + f'>{name}</a>' for f,name in NAV)
     script = f'<script src="assets/js/publications.js?v={SITE_VERSION}" defer></script>' if filename == 'pub.html' else ''
-    heading = '' if filename == 'index.html' else f'<h1 class="page-title">{e(title)}</h1>'
+    if filename.startswith('evaluation'):
+        script = f'<link rel="stylesheet" href="assets/css/evaluation.css?v={SITE_VERSION}"><script src="assets/js/evaluation.js?v={SITE_VERSION}" defer></script>'
+    heading = '' if filename == 'index.html' or filename.startswith('evaluation') else f'<h1 class="page-title">{e(title)}</h1>'
     document = f'''<!doctype html>
 <html lang="en">
 <head>
@@ -53,7 +56,7 @@ def page(filename, title, content):
 </body>
 </html>
 '''
-    document = re.sub(r'href="((?:index|pub|group|service|award|email)\.html)(#[^"]*)?"', lambda m: f'href="{m[1]}?v={SITE_VERSION}{m[2] or ""}"', document)
+    document = re.sub(r'href="((?:index|pub|group|service|award|email|evaluation(?:-[a-z-]+)?)\.html)(#[^"]*)?"', lambda m: f'href="{m[1]}?v={SITE_VERSION}{m[2] or ""}"', document)
     document = '\n'.join(line.rstrip() for line in document.splitlines()) + '\n'
     (ROOT/filename).write_text(document, encoding='utf-8')
 
@@ -88,7 +91,7 @@ def homepage():
         <li><strong>Agents and code intelligence:</strong> software engineering, tool use, deep research, and long-horizon task execution.</li>
         <li><strong>Evaluation:</strong> knowledge, factuality, safety, multimodal understanding, and realistic agent capabilities.</li>
       </ul>
-      <p>See my <a href="pub.html">publications</a> for recent work.</p>
+      <p>Explore my <a href="evaluation.html">evaluation benchmarks</a> by capability, or see my <a href="pub.html">publications</a> for recent work.</p>
     </section>
     <section aria-labelledby="news"><h2 id="news">News</h2>{news_list(news[:6])}
       <details class="older-news"><summary>Earlier news</summary>{news_list(news[6:])}</details>
@@ -217,5 +220,7 @@ def awards():
 
 if __name__=='__main__':
     homepage(); publications(); members(); services(); awards()
+    from evaluation_site import build_evaluation
+    build_evaluation(page, format_authors)
     page('email.html','Contact','<p>Please reach me at <a href="mailto:liujiaheng@nju.edu.cn">liujiaheng@nju.edu.cn</a>.</p>')
-    print('Built Homepage, Publications, Members, Services, Awards, and Contact.')
+    print('Built academic pages and Evaluation overview with nine category pages.')
