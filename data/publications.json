@@ -6706,18 +6706,19 @@
       "Yuanxing Zhang",
       "Jiaheng Liu"
     ],
-    "year": 2025,
-    "venue": "arXiv preprint, 2025",
-    "status": "preprint",
+    "year": 2026,
+    "venue": "NeurIPS 2026",
+    "status": "published",
     "url": "https://arxiv.org/abs/2512.03405",
     "sources": [
       "arXiv author record",
-      "Benchmark inventory, verified September 2026"
+      "Benchmark inventory, verified September 2026",
+      "Author-provided student update, October 2026"
     ],
     "arxiv_ids": [
       "2512.03405"
     ],
-    "sort_order": 2512.03405,
+    "sort_order": 80002512.03405,
     "benchmark": "ViDiC-1K（ViDiC）",
     "id": "paper-e211489736",
     "corresponding_authors": [

@@ -1,0 +1,61 @@
+.student-highlights { margin: 27px 0 24px; padding: 25px 28px 21px; background: linear-gradient(115deg, #f7f1f8, #fdfbfe); border: 1px solid var(--line); border-radius: 10px; }
+.highlights-eyebrow { font-size: 12px; color: var(--accent); font-weight: 650; letter-spacing: .04em; margin-bottom: 18px; }
+.student-stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 28px; }
+.student-stats > div { display: flex; flex-direction: column; }
+.student-stats > div + div { padding-left: 28px; border-left: 1px solid #dccce0; }
+.student-stats strong { font-size: 40px; line-height: 1.1; color: var(--accent); letter-spacing: -.04em; }
+.student-stats span { font-size: 13px; line-height: 1.55; margin-top: 9px; max-width: 260px; }
+.stats-scope { font-size: 11px; line-height: 1.7; color: var(--muted); margin: 20px 0 16px; }
+.industry-line { border-top: 1px solid var(--line); padding-top: 14px; }
+.industry-line > span { font-size: 11px; color: var(--muted); }
+.industry-line p { font-size: 14px; font-weight: 600; color: var(--accent); margin: 4px 0 0; }
+.people-nav { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 3px 0 5px; font-size: 13px; }
+.student-cohort { scroll-margin-top: 24px; }
+.member-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; padding: 0; margin: 0; list-style: none; }
+.member-card { min-width: 0; padding: 22px 24px 23px; margin: 0; border: 1px solid var(--line); border-radius: 8px; background: #fff; }
+.member-card-header { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 3px 10px; }
+.member-card h3 { font-size: 20px; margin: 0; letter-spacing: -.02em; }
+.member-card h3 span { font-size: 14px; font-weight: 450; margin-left: 7px; letter-spacing: 0; white-space: nowrap; }
+.member-profile { font-size: 11px; white-space: nowrap; }
+.member-subtitle { color: var(--muted); font-size: 12px; margin: 5px 0 0; }
+.incoming .member-subtitle { color: var(--accent); }
+.research-period { font-size: 11px; color: var(--muted); margin: 3px 0 0; }
+.member-card h4 { margin: 0 0 5px; font-size: 10px; letter-spacing: .07em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.member-experience { margin-top: 19px; }
+.member-experience p { font-size: 13px; line-height: 1.6; margin: 0; }
+.experience-dates { font-size: 11px; color: var(--muted); margin-top: 5px; }
+.experience-dates summary, .more-research summary { cursor: pointer; width: fit-content; color: var(--accent); }
+.experience-dates ul { list-style: none; margin: 8px 0 0; padding: 0; }
+.experience-dates li { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 2px 10px; padding: 0; margin: 0 0 4px; }
+.experience-dates time { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.member-research { margin-top: 20px; }
+.student-work { list-style: none; padding: 0; margin: 0; }
+.student-work li { margin: 0; padding: 9px 0; border-bottom: 1px solid #f0e9f2; }
+.student-work li:last-child { border-bottom: 0; padding-bottom: 0; }
+.research-title { font-size: 14px; color: var(--accent); font-weight: 650; line-height: 1.45; overflow-wrap: anywhere; }
+.research-meta { display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 9px; font-size: 11px; color: var(--muted); line-height: 1.65; margin-top: 4px; }
+.author-role.first, .author-role.co-first { background: var(--soft); color: var(--accent); padding: 0 5px; border-radius: 3px; font-weight: 600; }
+.more-research { margin-top: 12px; font-size: 11px; }
+.student-outcome { margin: 17px 0 0; padding: 10px 12px; border-left: 2px solid var(--accent); background: var(--soft); font-size: 13px; }
+.student-outcome strong { display: block; font-size: 10px; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 3px; }
+.student-outcome span { font-weight: 600; }
+.cohort-note { color: var(--muted); font-size: 13px; max-width: 800px; margin: -3px 0 20px; }
+.cohort-subheading { margin: 24px 0 12px; font-size: 15px; }
+@media (max-width: 720px) {
+  .student-highlights { padding: 22px 20px 19px; }
+  .student-stats { gap: 16px; }
+  .student-stats > div + div { padding-left: 16px; }
+  .student-stats strong { font-size: 34px; }
+  .student-stats span { font-size: 11px; }
+  .member-cards { grid-template-columns: 1fr; gap: 14px; }
+  .member-card { padding: 20px; }
+  .people-nav { gap: 8px 18px; font-size: 12px; }
+}
+@media (max-width: 430px) {
+  .student-stats { grid-template-columns: 1fr; gap: 14px; }
+  .student-stats > div { flex-direction: row; gap: 16px; align-items: center; }
+  .student-stats > div + div { padding: 14px 0 0; border-left: 0; border-top: 1px solid var(--line); }
+  .student-stats strong { min-width: 43px; }
+  .student-stats span { margin: 0; font-size: 12px; }
+}
+@media print { .people-nav { display: none; } .member-card { break-inside: avoid; } }

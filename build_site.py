@@ -7,10 +7,10 @@ import re
 import hashlib
 
 ROOT = Path(__file__).resolve().parent
-UPDATED = 'September 2026'
+UPDATED = 'October 2026'
 # Version every internal page and asset together, so cached old HTML cannot
 # reappear when navigating from an updated page.
-_VERSION_INPUTS = [Path(__file__), ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'evaluation_site.py', ROOT/'assets/css/evaluation.css', ROOT/'assets/js/evaluation.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
+_VERSION_INPUTS = [Path(__file__), ROOT/'members_site.py', ROOT/'assets/css/members.css', ROOT/'assets/css/academic.css', ROOT/'assets/js/publications.js', ROOT/'evaluation_site.py', ROOT/'assets/css/evaluation.css', ROOT/'assets/js/evaluation.js', ROOT/'images/favicon.png', *sorted((ROOT/'data').glob('*.json'))]
 SITE_VERSION = hashlib.sha256(b''.join(p.read_bytes() for p in _VERSION_INPUTS)).hexdigest()[:12]
 SCHOLAR = 'https://scholar.google.com/citations?user=yFI_RjUAAAAJ&hl=en'
 LAB = 'https://www.nju-link.com/'
@@ -24,6 +24,8 @@ def page(filename, title, content):
     script = f'<script src="assets/js/publications.js?v={SITE_VERSION}" defer></script>' if filename == 'pub.html' else ''
     if filename.startswith('evaluation'):
         script = f'<link rel="stylesheet" href="assets/css/evaluation.css?v={SITE_VERSION}"><script src="assets/js/evaluation.js?v={SITE_VERSION}" defer></script>'
+    if filename == 'group.html':
+        script += f'<link rel="stylesheet" href="assets/css/members.css?v={SITE_VERSION}">'
     heading = '' if filename == 'index.html' or filename.startswith('evaluation') else f'<h1 class="page-title">{e(title)}</h1>'
     document = f'''<!doctype html>
 <html lang="en">
@@ -170,27 +172,8 @@ def publications():
     {sections}''')
 
 def members():
-    data=json.loads((ROOT/'data/members.json').read_text())
-    content=f'<div class="members-intro"><p>I am a member of the <a href="{LAB}">Large-scale Intelligence and Knowledge (LINK) Lab</a> at Nanjing University. Our students work on foundation models, reinforcement learning, agents, code intelligence, and evaluation.</p><p>Interested in joining us? Please contact <a href="mailto:liujiaheng@nju.edu.cn">liujiaheng@nju.edu.cn</a>.</p></div>'
-    def member_list(rows):
-        result='<ul class="members">'
-        for m in rows:
-            link=f'<a class="member-link" href="{e(m["url"])}">Profile ↗</a>' if m.get('url') else ''
-            upcoming=m.get('status')=='upcoming'
-            year=f'{m["since"]} · Upcoming' if upcoming else f'{m["since"]}–present'
-            result+=f'<li class="member{" upcoming" if upcoming else ""}"><span class="member-name">{e(m["name"])}</span><span class="member-cn" lang="zh-CN">{e(m["chinese_name"])}</span><span class="member-year">{year}</span>{link}</li>'
-        return result+'</ul>'
-    for degree,heading in [('PhD','Ph.D. Students'),('Master','Master’s Students')]:
-        rows=[r for r in data if r['degree']==degree and r.get('status')!='upcoming']
-        content+=f'<section><h2>{heading}</h2>'+member_list(rows)+'</section>'
-    incoming=[r for r in data if r.get('status')=='upcoming']
-    if incoming:
-        content+='<section class="incoming-students"><h2>Incoming Students <span class="section-note">2027 · Upcoming</span></h2>'
-        for degree,heading in [('PhD','Ph.D. Students'),('Master','Master’s Students')]:
-            rows=[r for r in incoming if r['degree']==degree]
-            if rows:content+=f'<h3>{heading}</h3>'+member_list(rows)
-        content+='</section>'
-    page('group.html','Members',content)
+    from members_site import build_members
+    build_members(ROOT, page, LAB)
 
 def services():
     page('service.html','Professional Services','''

@@ -1,0 +1,628 @@
+{
+  "as_of": "2026-10-26",
+  "works": {
+    "SuperGPQA": {
+      "name": "SuperGPQA",
+      "title": "SuperGPQA: Scaling LLM Evaluation across 285 Graduate Disciplines",
+      "venue": "NeurIPS 2025 (Datasets and Benchmarks)",
+      "status": "published",
+      "url": "https://proceedings.nips.cc/paper_files/paper/2025/hash/a3c5af1f56fc73eef1ba0f442739f5ca-Abstract-Datasets_and_Benchmarks_Track.html",
+      "paper_id": "paper-08de0745f8"
+    },
+    "CriticLean": {
+      "name": "CriticLean",
+      "title": "CriticLean: Critic-Guided Reinforcement Learning for Mathematical Formalization",
+      "venue": "ACL 2026",
+      "status": "published",
+      "url": "https://aclanthology.org/2026.acl-long.139/",
+      "paper_id": "paper-47c8d7059f"
+    },
+    "WebCompass": {
+      "name": "WebCompass",
+      "title": "WebCompass: Evaluating Multimodal Code Agents in Web Development from Vision, Instruction, and Interaction to Implementation",
+      "venue": "EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2604.18224",
+      "paper_id": "paper-50c9dc2d14"
+    },
+    "SWE-Compass": {
+      "name": "SWE-Compass",
+      "title": "SWE-Compass: Towards Unified Evaluation of Agentic Coding Abilities for Large Language Models",
+      "venue": "ICML 2026",
+      "status": "published",
+      "url": "https://proceedings.mlr.press/v306/xu26k.html",
+      "paper_id": "paper-fa81781b64"
+    },
+    "OmniVideoBench": {
+      "name": "OmniVideoBench",
+      "title": "OmniVideoBench: Towards Audio-Visual Understanding Evaluation for Omni MLLMs",
+      "venue": "ICLR 2026",
+      "status": "published",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/df5e4da78dfbbfbfad3fcff0c2ce3bd7-Abstract-Conference.html",
+      "paper_id": "paper-a905c2e6a4"
+    },
+    "OmniSIFT": {
+      "name": "OmniSIFT",
+      "title": "OmniSIFT: Modality-Asymmetric Token Compression for Efficient Omni-modal Large Language Models",
+      "venue": "ICML 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2602.04804",
+      "paper_id": "paper-ecc54fde78"
+    },
+    "AVSCap": {
+      "name": "AVSCap",
+      "title": "AVSCap: Orchestrating Audio-Visual Synergy for Omni-modal Video Captioning",
+      "venue": "EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2607.12820",
+      "paper_id": "paper-86c47a4f6c"
+    },
+    "T2AV-Compass": {
+      "name": "T2AV-Compass",
+      "title": "T2AV-Compass: Towards Unified Evaluation for Text-to-Audio-Video Generation",
+      "venue": "ICML 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2512.21094",
+      "paper_id": "paper-144e34eedd"
+    },
+    "MVU-Eval": {
+      "name": "MVU-Eval",
+      "title": "MVU-Eval: Towards Multi-Video Understanding Evaluation for Multimodal LLMs",
+      "venue": "NeurIPS 2025 (Datasets and Benchmarks)",
+      "status": "published",
+      "url": "https://papers.nips.cc/paper_files/paper/2025/hash/4dbb159f2c68b359b3b6ed7dd039481c-Abstract-Datasets_and_Benchmarks_Track.html",
+      "paper_id": "paper-56919c6557"
+    },
+    "IF-VidCap": {
+      "name": "IF-VidCap",
+      "title": "IF-VidCap: Can Video Caption Models Follow Instructions?",
+      "venue": "ICLR 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2510.18726",
+      "paper_id": "paper-5fa5923ca1"
+    },
+    "ViDiC": {
+      "name": "ViDiC",
+      "title": "ViDiC: Video Difference Captioning",
+      "venue": "NeurIPS 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2512.03405",
+      "paper_id": "paper-e211489736"
+    },
+    "DR³-Eval": {
+      "name": "DR³-Eval",
+      "title": "DR³-Eval: Towards Realistic and Reproducible Deep Research Evaluation",
+      "venue": "EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2604.14683",
+      "paper_id": "paper-518a4b8b45"
+    },
+    "MT-Video-Bench": {
+      "name": "MT-Video-Bench",
+      "title": "MT-Video-Bench: A Holistic Video Understanding Benchmark for Evaluating Multimodal LLMs in Multi-Turn Dialogues",
+      "venue": "Findings of ACL 2026",
+      "status": "published",
+      "url": "https://aclanthology.org/2026.findings-acl.397/",
+      "paper_id": "paper-5c664127b5"
+    },
+    "OmniHalluc-L": {
+      "name": "OmniHalluc-L",
+      "title": "OmniHalluc-L: Counterfactual Benchmarking and Modality-Perturbation Calibration for Long-Form Omni Hallucination",
+      "venue": "EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2606.03614",
+      "paper_id": "paper-502d59d49e"
+    },
+    "TVIR": {
+      "name": "TVIR",
+      "title": "TVIR: Building Deep Research Agents Towards Text-Visual Interleaved Report Generation",
+      "venue": "EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2606.02320",
+      "paper_id": "paper-5596fe1349"
+    },
+    "MSQA": {
+      "name": "MSQA",
+      "title": "MSQA: A Natively Sourced Multilingual and Multicultural SimpleQA Benchmark",
+      "venue": "Findings of EMNLP 2026",
+      "status": "published",
+      "url": "",
+      "paper_id": "paper-dc98942d99"
+    },
+    "OmniCap-IF": {
+      "name": "OmniCap-IF",
+      "title": "OmniCap-IF: Benchmarking and Improving Instruction Following Abilities for Omni-Video Captioning",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2606.08572",
+      "paper_id": "paper-231ca807db"
+    },
+    "AVE-Compass": {
+      "name": "AVE-Compass",
+      "title": "AVE-Compass: Towards Holistic Evaluation for Audio-Video Editing Abilities",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2607.24821",
+      "paper_id": "paper-292564dd23"
+    },
+    "CodeTracer": {
+      "name": "CodeTracer",
+      "title": "CodeTracer: Towards Traceable Agent States",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2604.11641",
+      "paper_id": "paper-f350189c95"
+    },
+    "ABot-AgentOS": {
+      "name": "ABot-AgentOS",
+      "title": "ABot-AgentOS: A General Robotic Agent OS with Lifelong Multi-modal Memory",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2607.10350",
+      "paper_id": "paper-c03fe01e4c"
+    },
+    "Solvita": {
+      "name": "Solvita",
+      "title": "Solvita: Enhancing Large Language Models for Competitive Programming via Agentic Evolution",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2605.15301",
+      "paper_id": "paper-26a9ca173c"
+    },
+    "CoVEBench": {
+      "name": "CoVEBench",
+      "title": "CoVEBench: Can Video Editing Models Handle Complex Instructions?",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2606.08415",
+      "paper_id": "paper-77dc066ee0"
+    },
+    "CLI-Universe": {
+      "name": "CLI-Universe",
+      "title": "CLI-Universe: Towards Verifiable Task Synthesis Engine for Terminal Agents",
+      "venue": "arXiv preprint, 2026",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2606.22883",
+      "paper_id": "paper-911f9d1f9c"
+    },
+    "MMG2Skill": {
+      "name": "MMG2Skill",
+      "title": "MMG2Skill: Can Agents Distill In-the-Wild Guides into Self-Evolving Skills?",
+      "venue": "Findings of EMNLP 2026",
+      "status": "published",
+      "url": "https://arxiv.org/abs/2606.01993",
+      "paper_id": "paper-7727fea8c8"
+    },
+    "Inverse IFEval": {
+      "name": "Inverse IFEval",
+      "title": "Inverse IFEval: Can LLMs Unlearn Stubborn Training Conventions to Follow Real Instructions?",
+      "venue": "ICLR 2026",
+      "status": "published",
+      "url": "https://proceedings.iclr.cc/paper_files/paper/2026/hash/d1a1e8713fcd5626656553c82f7c3b26-Abstract-Conference.html",
+      "paper_id": "paper-a6444645dc"
+    },
+    "Socratic Skill": {
+      "name": "Socratic Skill",
+      "title": "Socratic Skill Learning: Interleaving Teaching and Practice for Transferable Agent Skills",
+      "venue": "Preprint",
+      "status": "preprint",
+      "url": "https://arxiv.org/abs/2610.17860"
+    }
+  },
+  "students": {
+    "Yifan Yao": {
+      "internships": [
+        {
+          "organization": "Kuaishou"
+        },
+        {
+          "organization": "StepFun"
+        }
+      ],
+      "works": [
+        {
+          "work": "SuperGPQA",
+          "role": "co-first"
+        },
+        {
+          "work": "CriticLean",
+          "role": "co-first"
+        },
+        {
+          "work": "CodeTracer",
+          "role": "co-first"
+        }
+      ],
+      "additional_works": [
+        {
+          "work": "CLI-Universe",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Xinping Lei": {
+      "internships": [
+        {
+          "organization": "Kuaishou",
+          "start": "2025.08",
+          "end": "2026.02"
+        },
+        {
+          "organization": "ByteDance",
+          "start": "2026.02",
+          "end": "2026.06"
+        },
+        {
+          "organization": "Alibaba",
+          "start": "2026.07",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "WebCompass",
+          "role": "first"
+        },
+        {
+          "work": "Inverse IFEval",
+          "role": "co-first"
+        },
+        {
+          "work": "SWE-Compass",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Yiyan Ji": {
+      "internships": [
+        {
+          "organization": "Kuaishou · Kling",
+          "start": "2025.09",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "OmniVideoBench",
+          "role": "co-first"
+        },
+        {
+          "work": "OmniSIFT",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Yanghai Wang": {
+      "internships": [
+        {
+          "organization": "Kuaishou · Kling",
+          "start": "2025.09",
+          "end": "2026.06"
+        },
+        {
+          "organization": "Alibaba",
+          "start": "2026.09",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "AVSCap",
+          "role": "first"
+        },
+        {
+          "work": "T2AV-Compass",
+          "role": "co-first"
+        },
+        {
+          "work": "MVU-Eval",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Shihao Li": {
+      "internships": [
+        {
+          "organization": "Kuaishou · Kling",
+          "start": "2025.09",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "IF-VidCap",
+          "role": "first"
+        },
+        {
+          "work": "ViDiC",
+          "role": "co-first"
+        },
+        {
+          "work": "MMG2Skill",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Qianqian Xie": {
+      "internships": [
+        {
+          "organization": "Alibaba",
+          "start": "2025.11",
+          "end": "2026.09"
+        }
+      ],
+      "works": [
+        {
+          "work": "DR³-Eval",
+          "role": "first"
+        },
+        {
+          "work": "MT-Video-Bench",
+          "role": "co-first"
+        },
+        {
+          "work": "TVIR",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Tao Wang": {
+      "internships": [
+        {
+          "organization": "Kuaishou · Kling",
+          "start": "2026.01",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "T2AV-Compass",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Jingbo Wang": {
+      "internships": [
+        {
+          "organization": "Alibaba",
+          "start": "2026.08",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "ABot-AgentOS",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Jiafu Tang": {
+      "internships": [
+        {
+          "organization": "StepFun",
+          "start": "2025.08",
+          "end": "2025.12"
+        },
+        {
+          "organization": "Kuaishou · Kling",
+          "start": "2025.12",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "AVSCap",
+          "role": "co-first"
+        },
+        {
+          "work": "OmniHalluc-L",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Xinkai Ma": {
+      "internships": [
+        {
+          "organization": "Alibaba",
+          "start": "2025.12",
+          "end": "2026.08"
+        }
+      ],
+      "works": [
+        {
+          "work": "TVIR",
+          "role": "first"
+        }
+      ]
+    },
+    "Yukai Huang": {
+      "internships": [],
+      "works": [
+        {
+          "work": "WebCompass",
+          "role": "co-first"
+        },
+        {
+          "work": "MSQA",
+          "role": "co-first"
+        },
+        {
+          "work": "AVE-Compass",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Jiahao Wang": {
+      "internships": [
+        {
+          "organization": "Alibaba",
+          "start": "2026.07",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "AVSCap",
+          "role": "co-first"
+        },
+        {
+          "work": "OmniCap-IF",
+          "role": "first"
+        },
+        {
+          "work": "T2AV-Compass",
+          "role": "coauthor"
+        }
+      ]
+    },
+    "Tianzhuang He": {
+      "internships": [
+        {
+          "organization": "Insta360",
+          "start": "2025.11",
+          "end": "2026.05"
+        },
+        {
+          "organization": "ByteDance",
+          "start": "2026.06",
+          "end": "2026.07"
+        },
+        {
+          "organization": "Alibaba",
+          "start": "2026.07",
+          "end": "present"
+        }
+      ],
+      "works": []
+    },
+    "Letian Zhu": {
+      "internships": [
+        {
+          "organization": "Alibaba",
+          "start": "2026.07",
+          "end": "present"
+        }
+      ],
+      "works": [
+        {
+          "work": "Socratic Skill",
+          "role": "first"
+        },
+        {
+          "work": "CodeTracer",
+          "role": "co-first"
+        }
+      ]
+    },
+    "Zongyu Li": {
+      "internships": [],
+      "works": []
+    },
+    "An Ping": {
+      "internships": [],
+      "works": [
+        {
+          "work": "OmniCap-IF",
+          "role": "co-first"
+        }
+      ]
+    }
+  },
+  "research_interns": [
+    {
+      "name": "Han Li",
+      "chinese_name": "李涵",
+      "education": "Nanjing University · Undergraduate, 2023 intake",
+      "research_since": "2025.08",
+      "internships": [
+        {
+          "organization": "Kuaishou"
+        },
+        {
+          "organization": "Microsoft"
+        },
+        {
+          "organization": "Baidu"
+        }
+      ],
+      "works": [
+        {
+          "work": "Solvita",
+          "role": "first"
+        },
+        {
+          "work": "CodeTracer",
+          "role": "first"
+        }
+      ],
+      "other_work": [
+        {
+          "name": "TestPrism",
+          "role": "first"
+        },
+        {
+          "name": "GCIBench",
+          "role": "first"
+        }
+      ],
+      "offers": [
+        "CUHK",
+        "UIUC"
+      ]
+    },
+    {
+      "name": "Jiaming Wang",
+      "chinese_name": "王佳铭",
+      "education": "Nanjing University · Undergraduate, 2023 intake",
+      "research_since": "2025.08",
+      "internships": [
+        {
+          "organization": "Alibaba"
+        }
+      ],
+      "works": [
+        {
+          "work": "T2AV-Compass",
+          "role": "co-first"
+        }
+      ],
+      "other_work": [
+        {
+          "name": "DRIFT",
+          "role": "first"
+        },
+        {
+          "name": "LongWM-Compass",
+          "role": "first"
+        }
+      ],
+      "offers": [
+        "HKUST"
+      ]
+    },
+    {
+      "name": "Jiangtao Wu",
+      "chinese_name": "吴江涛",
+      "education": "Nanjing University · Undergraduate, 2023 intake",
+      "internships": [],
+      "works": [
+        {
+          "work": "ViDiC",
+          "role": "first"
+        },
+        {
+          "work": "IF-VidCap",
+          "role": "co-first"
+        },
+        {
+          "work": "CoVEBench",
+          "role": "first"
+        }
+      ],
+      "offers": [
+        "Peking University"
+      ],
+      "offer_label": "Master’s offer"
+    }
+  ]
+}
